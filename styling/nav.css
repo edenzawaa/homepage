@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ul {
+    list-style-type:none;
+    margin:0;
+    padding:0.7rem;
+    overflow:hidden;
+    display: flex;
+    gap: 8rem;
+  }
+  li {
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2rem;
+    font-family: sans-serif;
+    transition: transform 0.3s ease-in-out;
+  
+  }
+  a {
+    text-decoration: none; 
+    color: inherit
+  }
+  
+  nav {
+    max-width: 100vw; /* Optional: prevents overflow */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Or use flex:1 method */
+    padding: 15px 5vw;
+    background-color: rgb(119, 253, 197);
+    color: #000000;
+  }
+  .logo{
+    max-width: 3rem; /* Or whatever fits well */
+    height: auto;
+  }
+  ul li:hover{
+    transform: scale(1.2);
+  }
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-family: Poppins, sans-serif;
+    font-size: 1.2rem;
+    color: black;
+    /* width: 35%; */
+    /* width removed to allow content-based sizing */
+  }
+  body::-webkit-scrollbar{
+    display: none;
+  }
+  .icon-container{
+    display:flex;
+    align-items:center;
+    gap:30px;
+  
+  }
+  .icon-container i {
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  .icon-container i {
+    font-size: 1.5rem;
+    color: black;
+  }
+  .icon-container i:hover {
+    transform: scale(1.2);
+  }
+  

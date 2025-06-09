@@ -1,0 +1,28 @@
+#shop-preview{
+    margin-top: 2rem;
+    max-width: 1700px; /* Optional: limits the width of the carousel */
+    margin: 2rem auto;
+}
+#shop-preview-container1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#shop-preview-container1 button{
+    padding: 8px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: sans-serif;
+    cursor:pointer;
+    transition: all .2s ease-in-out;
+    background-color: rgb(43, 236, 156);
+    color:rgb(0, 0, 0);
+    border-radius:50px;
+    border: none;
+    height: 5rem;
+}
+#shop-preview-container1 button:hover{
+    transform: scale(1.1);
+}
+
+
