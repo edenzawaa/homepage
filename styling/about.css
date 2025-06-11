@@ -19,6 +19,7 @@
     margin: 0 5rem;
     align-items: center;
     flex-direction: column;
+    text-align: left;
     gap: 1rem;
     max-width: 1000px; /* Optional: limits the width of the text container */
   }
@@ -35,6 +36,7 @@
     font-style: normal;
     font-size: 2rem;
     color: #000000;
+
   }
     .about-container img{
     width: 40vw;
@@ -42,6 +44,8 @@
     border-radius: 10px;
   }
   #discover-button{
+    display: block;
+    margin: 0 auto 0 0; /* Moves button to the left */
     padding: 8px 30px;
     font-size: 20px;
     font-weight: 600;
@@ -53,7 +57,6 @@
     border-radius:50px;
     border: none;
     height: 5rem;
-    width: 18rem;
   }
   #discover-button:hover{
     transform: scale(1.1);

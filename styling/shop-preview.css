@@ -1,5 +1,4 @@
 #shop-preview{
-    margin-top: 2rem;
     max-width: 1700px; /* Optional: limits the width of the carousel */
     margin: 2rem auto;
 }
@@ -24,5 +23,22 @@
 #shop-preview-container1 button:hover{
     transform: scale(1.1);
 }
+#shop-preview-container2 {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Scale container */
+    gap: 2rem;
+}
+.shop-preview-item {
+    
+    width:100%; /* Keep items proportional */
+    max-width: 1000px; /* Prevent excessive scaling */
+}
 
-
+.shop-preview-item img {
+    width: 100%;
+    height: auto;
+    border: solid 1px #1f1f1f;
+    border-radius: 1rem;
+}

@@ -21,7 +21,6 @@
     min-width: 0; /* Ensures flex doesn't stretch it weirdly */
     border: solid 1px #1f1f1f;
     border-radius: 1rem;
-    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
   }
   .carousel::-webkit-scrollbar {
     display: none; /* Hides the scrollbar */
