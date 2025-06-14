@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Special+Gothic+Expanded+One&display=swap');
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
 
 
 body {
@@ -107,3 +111,51 @@ code {
   width: 90vw;
 }
 
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  #home-text {
+    width: 90%;
+    text-align: center;
+  }
+
+  #home-text h1 {
+    font-size: 2.5rem;
+  }
+
+  #home-text p {
+    font-size: 1.2rem;
+  }
+
+  .home-image {
+    max-width: 90%;
+    margin-top: 2rem;
+  }
+
+  #Home-section-info {
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem auto;
+  }
+}
+
+@media (max-width: 480px) {
+  #shop-button {
+    width: 10rem;
+    height: 4rem;
+    font-size: 1rem;
+  }
+
+  #home-text h1 {
+    font-size: 2rem;
+  }
+
+  #home-text p {
+    font-size: 1rem;
+  }
+}
