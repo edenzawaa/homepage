@@ -18,6 +18,7 @@ li {
   font-size: 2rem;
   font-family: sans-serif;
   transition: transform 0.3s ease-in-out;
+  color: black;
 }
 a {
   text-decoration: none;
@@ -41,17 +42,21 @@ nav {
   max-width: 3rem;
   height: auto;
 }
-ul li:hover {
+/* ul li:hover {
 
-}
+} */
 .logo-container {
   display: flex;
   align-items: center;
   gap: 20px;
   font-family: Poppins, sans-serif;
-  font-size: 1.2rem;
   color: black;
 }
+.logo-container h2 {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
 body::-webkit-scrollbar {
   display: none;
 }
@@ -83,10 +88,11 @@ body::-webkit-scrollbar {
   font-size: 1.5rem;
   font-family: sans-serif;
   border: solid 2.5px;
+  transition: ease-in-out 0.3s;
 }
 #signup:hover {
-  background-color: rgb(61, 60, 60);
-  color: white;
+  background-color: rgb(255, 255, 255);
+  
 }
 #login {
   font-weight: 600;
@@ -97,6 +103,7 @@ body::-webkit-scrollbar {
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   text-decoration: none;
+  transition: ease-in-out 0.3s;
 }
 #login:hover {
   background-color: rgb(61, 60, 60);
@@ -116,6 +123,10 @@ body::-webkit-scrollbar {
   font-size: 2rem;
   cursor: pointer;
 }
+.user-icons{
+  gap: 2rem;
+}
+
 /* === MOBILE ADJUSTMENTS === */
 @media (max-width: 768px) {
   .hamburger {
@@ -186,11 +197,6 @@ body::-webkit-scrollbar {
 
   }
   
-  .user-icon {
-    display: block;
-    font-size: 1.8rem;
-    cursor: pointer;
-  }
 }
 
 /* Show login/signup normally on larger viewports */
@@ -210,6 +216,7 @@ body::-webkit-scrollbar {
   }
   li {
     font-size: 1rem;
+    
   }
 }
 
@@ -220,3 +227,67 @@ body::-webkit-scrollbar {
   align-items: center;
   width: 100%;
 }
+.dropdown-content{
+  display: none; /* Initially hidden */
+  border: solid 1px #ccc;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: auto;
+  right: 0;
+  background-color: white;
+  padding: 1rem;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  cursor: pointer;
+  z-index: 1;
+}
+.dropdown-content.active{
+  display: block; /* Show when active */
+}
+.user-menu{
+  cursor: pointer;
+}
+
+/* Hide text buttons on desktop */
+.user-buttons {
+  display: none;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .user-icons {
+    display: none; /* Hide icons */
+  }
+
+  .user-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+  }
+  .user-menu i {
+    margin-bottom: 2rem;
+  }
+
+  .user-buttons button {
+    width: 100%;
+    color: white;
+    cursor: pointer;
+    padding: 0.3rem 0.7rem;
+    background-color: transparent;
+    color: black;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    border: solid 2.5px;
+    transition: ease-in-out 0.3s;
+  }
+
+  .user-buttons button:hover {
+    background-color: #27ae60;
+  }
+}
+
