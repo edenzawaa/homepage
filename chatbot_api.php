@@ -17,7 +17,7 @@ if (!$input) {
     exit;
 }
 
-$apiKey = 'AIzaSyDjpm_i5G46VEqsBpiXJQ5tLQQ08-x7Bz0'; // Replace
+$apiKey = ''; // Replace
 $model = 'models/gemini-2.0-flash';
 
 $client = new Client([
